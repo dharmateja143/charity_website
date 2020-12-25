@@ -1,0 +1,67 @@
+{%load static%}
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>AboutUs</title>
+    </head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+
+  .bio{
+  	width:600px;
+  	height:360px;
+    text-align: center;
+  	margin : 0 auto;
+  	background-color :#ffeead;
+  	margin-top: 50px;
+  }
+
+  .bio img{
+  	width:150px;
+  	height:150px;
+    margin-top: 10px;
+
+  }
+
+</style>
+
+    <body style="background-color:#009688">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="">Dharma's Charity</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/gallery">Gallery<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/donate">Donate<span class="sr-only">(current)</span></a>
+          </li>
+        <!--  <li class="nav-item active">
+            <a class="nav-link" href="/contact">Contact us<span class="sr-only">(current)</span></a>
+          </li>-->
+          <li class="nav-item active">
+            <a class="nav-link" href="/visitus">Visit us<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        </ul>
+  </div>
+</nav>
+<div class="bio" >
+
+  <img src="{% static 'app/dharma.jpg' %}" alt="">
+<p>Hai I my name is <b>Dharma Teja Kasoju</b> founder of <b>Dharma's Charity</b>.I request everyone to help the orphan people as well as the old people as possible you can.A small
+help from your side it looks big for those people who were in need.</p>
+<center><b>Thank you</b></center>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Visit Us</title>
+    </head>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+.c{
+  margin-top: 10px;
+}
+.bio{
+  width:1000px;
+  height:1000px;
+  margin : 0 auto;
+  background-color : #35a79c;
+  text-decoration-color: #54b2a9;
+  margin-top: 20px;
+}
+</style>
+
+    <body style="background-color:#009688">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="">Dharma's Charity</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/gallery">Gallery<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/donate">Donate<span class="sr-only">(current)</span></a>
+          </li>
+        <!--  <li class="nav-item active">
+            <a class="nav-link" href="/contact">Contact us<span class="sr-only">(current)</span></a>
+          </li>-->
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">About us<span class="sr-only">(current)</span></a>
+          </li>
+
+        </ul>
+  </div>
+  </nav>
+
+<div class="c">
+  <form class="bio" action="{% url 'visitusaction' %}" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+  <br>Name:<input type="text" name="name" value="" class="form-control"  placeholder="Full Name" required="True"><br>
+    PhoneNumber:<input type="number" class="form-control"  name="phone" value="" placeholder="Phone Number" required="True"><br>
+    Email:<input type="email" class="form-control" name="email" value="" placeholder="Email" required="True"><br>
+    Time:<input type="time" name="time" class="form-control"  value="" required="True"><br>
+    Date:<input type="date" name="date" class="form-control"  value="" required="True"><br>
+    Purpose of visiting:<br><textarea name="purpose" value="" rows="8" cols="80" class="form-control"  required="True"></textarea><br>
+  <center> <input type="submit" class="btn btn-primary" name="submit" value="submit"></center>
+  </div>
+  </form>
+</div>
+
+<hr>
+  </body>
+</html>

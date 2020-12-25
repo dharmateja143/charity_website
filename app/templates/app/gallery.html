@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Gallery</title>
+    </head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style media="screen">
+      body
+        {
+          img:url("")
+        }
+    </style>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <body style="background-color:#009688">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="">Dharma's Charity</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/donate">Donate<span class="sr-only">(current)</span></a>
+          </li>
+
+          <!--<li class="nav-item active">
+            <a class="nav-link" href="/contact">Contactus<span class="sr-only">(current)</span></a>
+          </li>-->
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">Aboutus<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/visitus">Visit us<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        </ul>
+  </div>
+  </nav>
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'app/orphan_1.jpeg' %}" target="_blank">
+          <img src="{% static 'app/orphan_1.jpeg' %}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Providing good meals to the students.</p>
+          </div>
+        </a>.
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'app/orphan_2.jpeg' %}" target="_blank">
+          <img src="{% static 'app/orphan_2.jpeg' %}" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>Good food leads to good energy</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'app/orphan_3.jpeg' %}" target="_blank">
+          <img src="{% static 'app/orphan_3.jpeg' %}" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Students holding the books donated by people.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'app/orphan_4.jpeg' %}" target="_blank">
+          <img src="{% static 'app/orphan_4.jpeg' %}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>A organisation provided daily needs to our students</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'app/orphan_5.jpeg' %}" target="_blank">
+          <img src="{% static 'app/orphan_5.jpeg' %}" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>Students playing with loat joy and happiness</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'app/orphan_6.jpeg' %}" target="_blank">
+          <img src="{% static 'app/orphan_6.jpeg' %}" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>People from society came to our charity spending time with our students</p>
+          </div>
+        </a>
+      </div>
+  </div>
+</div>
+  </body>
+</html>
